@@ -10,8 +10,8 @@
 </head>
 <body>
     
-      
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Вариант 1</button>
+<div>Вариант 1</div>      
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Катаклизмы на марсе</button>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -27,10 +27,10 @@
 
         <div class="mb-3">
             <div>тип угрозы</div>
-            <select class="form-select" aria-label="Пример выбора по умолчанию">
-                <option value="1">землетрясение</option>
-                <option value="2">ураган</option>
-                <option value="3">засуха</option>
+            <select class="form-select" aria-label="Пример выбора по умолчанию" name="type">
+                <option selected value="землетрясение">землетрясение</option>
+                <option value="ураган">ураган</option>
+                <option value="засуха">засуха</option>
             </select>
         </div>
 
@@ -41,12 +41,12 @@
         
         <div class="mb-3">
             <label for="applicant" class="form-label" >заявитель</label>
-            <input name="applicant" class="form-control" required>
+            <input name="applicant" class="form-control">
         </div>
 
         <div class="mb-3">
-            <label for="applicant" class="form-label" >Уровень угрозы</label>
-            <input name="applicant" class="form-control" type="number" min="0" required>
+            <label for="level" class="form-label" >Уровень угрозы</label>
+            <input name="level" class="form-control" type="number" min="0">
         </div>
         
         </form>  
