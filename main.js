@@ -3,6 +3,9 @@ let butReady = document.getElementById("ready"); //кнопка готово
 let myForm = document.getElementById("form"); //форма
 
 let date = document.querySelector('[name="date"]')
+    type = document.querySelector('[name="type"]')
+    applicant = document.querySelector('[name="applicant"]')
+    level = document.querySelector('[name="level"]')
 
 let dateEror = document.getElementById("dateEror");
 
@@ -20,7 +23,10 @@ date.onfocus = function(){
 butReady.addEventListener("click", () => {  
   
   let data = {
+    'тип угрозы': type.value,
     'дата': date.value,
+    'заявитель': applicant.value,
+    'уровень угрозы': level.value
   };
 
   let result = myForm.checkValidity();
